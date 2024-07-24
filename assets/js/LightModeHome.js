@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
   const themeSwitch = document.getElementById('theme-switch');
+  const logo = document.getElementById('logo');
 
   // Función para aplicar el tema
   const applyTheme = (lightMode) => {
@@ -9,10 +10,22 @@ document.addEventListener('DOMContentLoaded', () => {
       stylesheet.setAttribute('href', 'assets/css/mainLightHome.css');
       document.body.style.transition = 'background-color 0.5s ease';
       document.body.style.backgroundColor = '#FFF'; // Ajusta el color según tu tema claro
+      logo.style.transition = 'opacity 0.5s ease';
+      logo.style.opacity = 0; // Iniciar transición
+      setTimeout(() => {
+        logo.src = 'assets/img/logo/footer-logo-lightMode.png';
+        logo.style.opacity = 1; // Terminar transición
+      }, 500);
     } else {
       stylesheet.setAttribute('href', 'assets/css/main.css');
       document.body.style.transition = 'background-color 0.5s ease';
       document.body.style.backgroundColor = '#000'; // Ajusta el color según tu tema oscuro
+      logo.style.transition = 'opacity 0.5s ease';
+      logo.style.opacity = 0; // Iniciar transición
+      setTimeout(() => {
+        logo.src = 'assets/img/logo/footer-logo.png';
+        logo.style.opacity = 1; // Terminar transición
+      }, 500);
     }
   };
 
