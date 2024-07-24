@@ -45,8 +45,8 @@
 -----------------------------------------------------------------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Marcellus&family=Outfit:wght@300;400;500;600;700&display=swap");
 :root {
-  --font-body: "Outfit", sans-serif;
-  --font-heading: "Marcellus", serif;
+  --font-body: "Inter", sans-serif;
+  --font-heading: "Inter", sans-serif;
   --color-primary: #ba161665;
   --color-heading: #131217;
   --xb-track-color: #16171B;
