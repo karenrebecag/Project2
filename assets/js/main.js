@@ -62,45 +62,7 @@
 		});
 	});
 
-	/*------------------------------------------
-	= sticky header
-	-------------------------------------------*/
-	function stickyHeader() {
-		var scrollDirection = "";
-		var lastScrollPosition = 0;
 
-		// Clone and make header sticky if the element with class 'xb-header' exists
-		if ($('.xb-header').length) {
-			$('.xb-header').addClass('original').clone(true).insertAfter('.xb-header').addClass('xb-header-area-sticky xb-sticky-stt').removeClass('original');
-		}
-
-		// Handle scroll events
-		$(window).on("scroll", function () {
-			var currentScrollPosition = $(window).scrollTop();
-
-			// Determine scroll direction
-			scrollDirection = currentScrollPosition < lastScrollPosition ? "up" : "down";
-			lastScrollPosition = currentScrollPosition;
-
-			// Check if element with ID 'xb-header-area' has class 'is-sticky'
-			if ($("#xb-header-area").hasClass("is-sticky")) {
-				// Add or remove classes based on scroll position for sticky header and mobile header
-				if (lastScrollPosition > 100) {
-					$(".xb-header-area-sticky.xb-sticky-stb").addClass("xb-header-fixed");
-				} else {
-					$(".xb-header-area-sticky.xb-sticky-stb").removeClass("xb-header-fixed");
-				}
-
-				// Add or remove classes for sticky header based on scroll direction
-				if (scrollDirection === "up" && lastScrollPosition > 100) {
-					$(".xb-header-area-sticky.xb-sticky-stt").addClass("xb-header-fixed");
-				} else {
-					$(".xb-header-area-sticky.xb-sticky-stt").removeClass("xb-header-fixed");
-				}
-			}
-		});
-	}
-	stickyHeader();
 
   	/*------------------------------------------
 	= Ukiyo
@@ -531,80 +493,6 @@
 	});
 	
 	/*------------------------------------------
-	= award slider
-	-------------------------------------------*/
-	var slider = new Swiper('.award-slider', {
-		spaceBetween: 30,
-		slidesPerView: 4,
-		roundLengths: true,
-		loop: true,
-		navigation: {
-			nextEl: '.xb-swiper-arrow-next',
-			prevEl: '.xb-swiper-arrow-prev',
-		},
-		autoplay: {
-			enabled: true,
-			delay: 4000
-		},
-		speed: 400,
-		breakpoints: {
-			'1600': {
-				slidesPerView: 4,
-			},
-			'1200': {
-				slidesPerView: 4,
-			},
-			'992': {
-				slidesPerView: 3,
-			},
-			'768': {
-				slidesPerView: 2,
-			},
-			'576': {
-				slidesPerView: 2,
-			},
-			'0': {
-				slidesPerView: 1,
-			},
-		},
-	});
-	
-	/*------------------------------------------
-	= award slider
-	-------------------------------------------*/
-	var slider = new Swiper('.portfolio-slider', {
-		spaceBetween: 30,
-		slidesPerView: 2,
-		roundLengths: true,
-		loop: true,
-		autoplay: {
-			enabled: true,
-			delay: 4000
-		},
-		speed: 400,
-		breakpoints: {
-			'1600': {
-				slidesPerView: 2,
-			},
-			'1200': {
-				slidesPerView: 2,
-			},
-			'992': {
-				slidesPerView: 2,
-			},
-			'768': {
-				slidesPerView: 2,
-			},
-			'576': {
-				slidesPerView: 2,
-			},
-			'0': {
-				slidesPerView: 1,
-			},
-		},
-	});
-
-	/*------------------------------------------
 	= testimonial slider
 	-------------------------------------------*/
 	var slider = new Swiper('.testimonial-slider', {
@@ -794,68 +682,7 @@
 		});
 	});
 
-	/*----------------------------
-	= SHOP PRICE SLIDER
-	------------------------------ */
-	if ($("#slider-range").length) {
-		$("#slider-range").slider({
-			range: true,
-			min: 12,
-			max: 200,
-			values: [0, 100],
-			slide: function (event, ui) {
-				$("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
-			}
-		});
-
-		$("#amount").val("$" + $("#slider-range").slider("values", 0) + " - $" + $("#slider-range").slider("values", 1));
-	}
 	
-	/*------------------------------------------
-	= TOUCHSPIN FOR PRODUCT SINGLE PAGE
-	-------------------------------------------*/
-	if ($("input.product-count").length) {
-		$("input.product-count").TouchSpin({
-			min: 1,
-			max: 1000,
-			step: 1,
-			buttondown_class: "btn btn-link",
-			buttonup_class: "btn btn-link",
-		});
-	}
-
-	/*------------------------------------------
-	= woocommerce
-	-------------------------------------------*/
-	if ($(".checkout-section").length) {
-		var showLogInBtn = $(".woocommerce-info > a");
-		var showCouponBtn = $(".showcoupon");
-		var shipDifferentAddressBtn = $("#ship-to-different-address");
-		var loginForm = $("form.login");
-		var couponForm = $(".checkout_coupon");
-		var shippingAddress = $(".shipping_address");
-
-		loginForm.hide();
-		couponForm.hide();
-		shippingAddress.hide();
-
-		showLogInBtn.on("click", function (event) {
-			event.preventDefault();
-			loginForm.slideToggle();
-			event.stopPropagation();
-		});
-
-		showCouponBtn.on("click", function (event2) {
-			event2.preventDefault();
-			couponForm.slideToggle();
-			event2.stopPropagation();
-		})
-
-		shipDifferentAddressBtn.on("click", function (event3) {
-			shippingAddress.slideToggle();
-			event3.stopPropagation();
-		})
-	}
 
 		
 	/*------------------------------------------
@@ -887,6 +714,7 @@
 
 
 })(jQuery);
+
 
 
 

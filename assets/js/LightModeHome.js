@@ -9,12 +9,12 @@ document.addEventListener('DOMContentLoaded', () => {
     if (lightMode) {
       stylesheet.setAttribute('href', 'assets/css/mainLightHome.css');
       document.body.style.transition = 'background-color 0.5s ease';
-      document.body.style.backgroundColor = '#FFF'; // Ajusta el color según tu tema claro
+      document.body.style.backgroundColor = '#FFF'; 
       logo.style.transition = 'opacity 0.5s ease';
-      logo.style.opacity = 0; // Iniciar transición
+      logo.style.opacity = 0; 
       setTimeout(() => {
-        logo.src = 'assets/img/logo/footer-logo-lightMode.png';
-        logo.style.opacity = 1; // Terminar transición
+        logo.src = 'assets/img/logo/SodioBlack.webp';
+        logo.style.opacity = 1; 
       }, 500);
     } else {
       stylesheet.setAttribute('href', 'assets/css/main.css');
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
       logo.style.transition = 'opacity 0.5s ease';
       logo.style.opacity = 0; // Iniciar transición
       setTimeout(() => {
-        logo.src = 'assets/img/logo/footer-logo.png';
+        logo.src = 'assets/img/logo/SodioWhite.webp';
         logo.style.opacity = 1; // Terminar transición
       }, 500);
     }
