@@ -8482,7 +8482,7 @@ blockquote .quote {
 }
 
 .about-brand .about-slider {
-  background: #16171B;
+  background: #000000;
   margin: 0;
 }
 .about-brand .xb-brand {
@@ -13002,4 +13002,9 @@ footer {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.enterpriseImg{
+  height: 130px;
+  width: 130px;
 }

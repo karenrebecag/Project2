@@ -316,11 +316,11 @@
 	var slider = new Swiper(".team-slider", {
 		loop: true,
 		spaceBetween: 125,
-		speed: 400,
+		speed: 1000, 
 		slidesPerView: 5,
 		autoplay: {
 			enabled: true,
-			delay: 6000
+			delay: 2500, 
 		},
 		breakpoints: {
 			'1600': {
@@ -347,6 +347,7 @@
 			},
 		},
 	});
+	
 
 	/*------------------------------------------
 	= team slider
@@ -392,7 +393,7 @@
 		loopAdditionalSlides: 30,
 		autoplay: {
 			enabled: true,
-			delay: 6000
+			delay: 1200
 		},
 		speed: 400,
 		breakpoints: {
