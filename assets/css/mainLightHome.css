@@ -47,7 +47,7 @@
 :root {
   --font-body: "Inter", sans-serif;
   --font-heading: "Inter", sans-serif;
-  --color-primary: #d90f0ff2;
+  --color-primary: #c1272d;
   --color-heading: #131217;
   --xb-track-color: #16171B;
   --color-dark: #0F172A;
@@ -4553,7 +4553,7 @@ body .mfp-wrap .mfp-container .mfp-content .mfp-close:hover::before, body .mfp-w
   left: -1px;
   width: 1px;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.18);
+  background-color: transparent;
   content: "";
   z-index: 2;
 }
@@ -7449,7 +7449,11 @@ body .mfp-wrap .mfp-container .mfp-content .mfp-close:hover::before, body .mfp-w
   background: var(--color-primary);
   filter: blur(176px);
 }
-
+@media (max-width: 480px) {
+  .testimonial-shape {
+    display: none;
+  }
+}
 .testimonial-quote {
   width: 407px;
   height: 407px;
@@ -11013,7 +11017,7 @@ abbr[title] {
 }
 
 .accordion_box .block .acc-btn {
-  color: var(--color-white);
+  color: var(--color-black);
   position: relative;
   font-size: 22px;
   cursor: pointer;
@@ -11056,7 +11060,7 @@ abbr[title] {
   margin-bottom: 20px;
 }
 .accordion_box .block .content a {
-  color: var(--color-white);
+  color: var(--color-black);
   font-size: 18px;
   font-weight: 700;
 }
@@ -11132,7 +11136,7 @@ abbr[title] {
   left: 0;
   font-size: 30px;
   font-family: var(--font-heading);
-  color: #fff;
+  color: black;
 }
 @media (max-width: 767px) {
   .xb-faq .accordion_box .block .number {
@@ -11562,7 +11566,7 @@ abbr[title] {
   color: var(--color-dark);
 }
 .xb-nav-mobile-button.btn-white {
-  color: var(--color-white);
+  color: var(--color-black);
 }
 
 .xb-header-menu-backdrop {
@@ -11606,7 +11610,11 @@ abbr[title] {
   -o-transform: translateX(-100%);
   transform: translateX(-100%);
   visibility: hidden;
-  background-color: #000;
+  background-color: #000000bf;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* Safari */
+  border-radius: 0 30px 30px 0;
+
 }
 
 .xb-header-menu.active {
@@ -11912,12 +11920,12 @@ abbr[title] {
 }
 
 .overlay-menu .right-area ul li a {
-  color: #A8A8A8;
+  color: #ffffff;
 }
 
 .overlay-menu .right-area ul li p {
   margin: 0;
-  color: #A8A8A8;
+  color: #ffffff;
 }
 
 .overlay-menu .right-area ul li span.title {
@@ -11933,12 +11941,14 @@ abbr[title] {
 
 .overlay-menu .overlay-wrap .left-area {
   text-align: left;
-  background: #000;
+  background: #00000066;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* Safari */
 }
 
 .overlay-menu .overlay-wrap .right-area {
   text-align: left;
-  background: #16171B;
+  background: #C1272D;
 }
 
 .overlay-menu .overlay-wrap .left-area nav {
@@ -11982,7 +11992,7 @@ abbr[title] {
   right: -50px;
   top: 8px;
   font-size: 25px;
-  color: #000000;
+  color: #ff0000;
   opacity: 0;
   -webkit-transform: translateY(30px) rotate(30deg);
   -ms-transform: translateY(30px) rotate(30deg);
