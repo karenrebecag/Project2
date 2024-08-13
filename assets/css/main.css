@@ -69,7 +69,7 @@ body {
   font-weight: 400;
   position: relative;
   font-family: var(--font-body);
-  font-size: 16px;
+  font-size: 14px;
   cursor: none;
   line-height: 27px;
   color: var(--color-default);
@@ -1928,25 +1928,28 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   font-family: var(--font-heading);
 }
-
-h2 {
-  font-size: 32px;
+h1 {
+  font-size: 14px;
 }
 
-h3 {
+h2 {
   font-size: 22px;
 }
 
-h4 {
+h3 {
   font-size: 20px;
 }
 
+h4 {
+  font-size: 28px;
+}
+
 h5 {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 h6 {
-  font-size: 16px;
+  font-size: 12px;
 }
 
 /* typography css end */
@@ -3581,6 +3584,23 @@ body[data-aos-easing=ease] [data-aos] {
   font-size: 11px;
   margin-left: 5px;
 }
+
+/* Estilos específicos para alinear el icono */
+.main-menu ul li.menu-item a.xb-nav-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px; /* Ajustar altura según el diseño de los otros elementos */
+    width: 50px;  /* Ajustar el ancho según el diseño del icono */
+    padding: 0;
+    margin: 0;
+}
+
+.main-menu ul li.menu-item img {
+    width: 100%; /* Ajusta la imagen al tamaño del contenedor */
+    height: auto;
+}
+
 .main-menu ul li.menu-item-has-children:hover > .submenu {
   opacity: 1;
   visibility: visible;
@@ -5260,6 +5280,10 @@ body .mfp-wrap .mfp-container .mfp-content .mfp-close:hover::before, body .mfp-w
 /*----------------------------------------*/
 /*  05. about
 /*----------------------------------------*/
+.about{
+  background-color: #151515;
+}
+
 .about-top {
   margin-top: -268px;
 }
@@ -5347,10 +5371,13 @@ body .mfp-wrap .mfp-container .mfp-content .mfp-close:hover::before, body .mfp-w
     max-width: 150px;
   }
 }
-
+.about-right{
+  padding-bottom: 100px;
+}
 .about-right .about-img img {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
+
 }
 .about-right .about-img .about-year {
   height: 168px;
@@ -11022,6 +11049,10 @@ abbr[title] {
   text-transform: uppercase;
   font-family: var(--font-heading);
 }
+
+.accordion_box .block .acc-btn:hover {
+color: #CE0E0F;
+}
 .accordion_box .block .acc-btn .arrow {
   position: absolute;
   right: 0;
@@ -11560,6 +11591,7 @@ abbr[title] {
 .xb-nav-mobile-button.btn-white {
   color: var(--color-white);
 }
+
 
 .xb-header-menu-backdrop {
   position: fixed;
@@ -13007,4 +13039,127 @@ footer {
 .enterpriseImg{
   height: 130px;
   width: 130px;
+}
+
+
+
+/*  CaseStudies Videos  */
+
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+
+}
+.video-container:hover {
+transform: scale(1.05);
+}
+
+.video-container video, .video-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.video-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  z-index: 1;
+}
+
+.video-container video {
+  z-index: 2;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.video-container:hover video {
+  opacity: 1;
+}
+
+.video-container:hover img {
+  opacity: 0;
+}
+
+.scroll-slider {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+.scroll-wrapper {
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  height: 100%;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.scroll-slide {
+  flex: 1 0 75vw;
+  max-width: 75vw;
+  height: 100%;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.item-container {
+  position: relative;
+}
+
+.item-title {
+  font-size: 4vw;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.item-body {
+  position: relative;
+}
+
+@media (min-width: 40em) {
+  .item-body {
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    width: 50%;
+    transform: translate(-25%, -50%);
+  }
+}
+
+.tag {
+  margin-right: .5rem;
+}
+
+.tag > a {
+  display: block;
+  padding: .25rem .5rem;
+  font-size: .75rem;
+  text-transform: uppercase;
+  background: rgba(255, 255, 255, .25);
+  color: #FFF;
 }

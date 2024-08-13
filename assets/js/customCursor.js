@@ -41,3 +41,14 @@
         $(window).scroll(updateProgress);
     });
 })(jQuery);
+
+
+function playVideo(container) {
+    const video = container.querySelector('video');
+    video.play(); // Reproduce el video al hacer hover
+}
+
+function pauseVideo(container) {
+    const video = container.querySelector('video');
+    video.pause(); // Pausa el video al quitar el hover
+}
