@@ -717,3 +717,22 @@
 })(jQuery);
 
 
+//Header
+$(document).ready(function() {
+    var lastScrollTop = 0;
+    var $header = $('.header-area');
+
+    $(window).on('scroll', function() {
+        var scrollTop = $(this).scrollTop();
+
+        if (scrollTop > lastScrollTop) {
+            // Scroll hacia abajo, ocultar header
+            $header.css('top', '-100px');
+        } else {
+            // Scroll hacia arriba, mostrar header
+            $header.css('top', '0');
+        }
+
+        lastScrollTop = scrollTop;
+    });
+});

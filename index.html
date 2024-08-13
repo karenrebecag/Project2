@@ -32,15 +32,13 @@
 </head>
 
 <body>
-
+<div class="grain"></div>
 
 
 <!-- backtotop - start -->
 <div class="xb-backtotop">
     <a href="#" class="scroll">
-        <i class="far fa-arrow-up"></i>
-    </a>
-</div>
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 6V18M12 6L7 11M12 6L17 11" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></div>
 <!-- backtotop - end -->
 
 <!-- preloader start -->
@@ -219,82 +217,224 @@
             <div id="gooey2"></div>
             -->
 
-        <!-- hero section start  -->
-        <section class="hero pt-105">
+<!-- hero section start  -->
+<section class="hero pt-200 pb-200">
+    <!-- Video de fondo -->
+    <video class="hero__background-video" autoplay loop muted playsinline>
+        <source src="assets/img/brand/bgVideo.mp4" type="video/mp4">
+        Tu navegador no soporta el video en HTML5.
+    </video>
+
+    <div class="container">
+        <div class="hero__content-wrap pos-rel">
+            <div class="hero__contant ul_li pos-rel">
+                <h1 class="title xb-split-text split-in-right" style="font-weight: 600;">
+                    <span class="sp-one">WE ARE</span> A Passionate Creative <br>
+                    <span class="sp-two">Design</span> AGENCY
+                </h1>
+                <div class="hero__shape">
+                    <span class="shape shape--1"></span>
+                    <span class="shape shape--2"></span>
+                </div>
+            </div>
             
-            <div class="container">
-                <div class="hero__content-wrap pos-rel">
-                    <div class="hero__contant ul_li pos-rel">
-                        <h1 class="title xb-split-text split-in-right" style="font-weight: 600;"><span class="sp-one">WE ARE</span>  A Passionate Creative <br> <span class="sp-two">Design</span> AGENCY</h1>
-                        <div class="hero__shape">
-                            <span class="shape shape--1"></span>
-                            <span class="shape shape--2"></span>
-                        </div>
-                    </div>
-                    <div class="hero__main-img pos-rel wow fadeInRight">
-                        <img style="opacity: 6; border-radius: 0 0 50px 50px;" src="assets/img/about/bannerHome.png" alt="">
-                    </div>
-                    <div class="hero__bg-blur xb-blur"></div>
-                </div>
+            <!-- Comentando el div de la imagen -->
+             
+            <div class="hero__main-img pos-rel wow fadeInRight">
+                <img class="ukiyo" style="opacity: 6; border-radius: 0 0 50px 50px;" src="assets/img/about/bannerHome.png" alt="">
             </div>
-        </section>
-        <!-- hero section end  -->
+            
+            
+            <div class="hero__bg-blur xb-blur"></div>
+        </div>
+    </div>
+</section>
+<!-- hero section end  -->
 
+<div id="homeSubBanner" class="container pt-120 pb-120">
+    <div class="row">
+        <!-- Primera columna con texto justificado y alineado a la izquierda -->
+        <div class="col-12 col-sm">
+            <div class="section-title">
+                <h1 class="title xb-split-text split-in-right" style="font-weight: 600;">
+                    <span class="sp-one">Check</span> Our <br>
+                    <span class="sp-two">Favorite</span> Case <br> Studies
+                </h1>
+                <button class="buttonSubBanner pt-30">
+                    CHECK MORE
+                </button>
+            </div>    
+        </div>
+        <!-- Segunda columna con imagen y texto debajo -->
+        <div class="col-12 col-sm">
+            <div class="about-img pos-rel portfolio-item xb-img-reveal-item mt-60" data-cat="Press Here"
+                data-title="VIEW CASE STUDY" data-fx="1">
+                <img  style="object-fit: cover; border-radius: 20px 0px 20px 0;"
+                    data-u-speed="1.2" src="https://uxstudioteam.com/images/hp-cover-oxa.webp" alt="">
+            </div>
+            <p class="text-start">Texto debajo de la imagen 2</p>
+        </div>
+        <!-- Tercera columna con imagen y texto debajo -->
+        <div class="col-12 col-sm">
+            <div class="about-img pos-rel portfolio-item xb-img-reveal-item mt-60" data-cat="Press Here"
+                data-title="VIEW CASE STUDY" data-fx="1">
+                <img  style="object-fit: cover; border-radius: 20px 0px 20px 0;"
+                    data-u-speed="1.2" src="https://uxstudioteam.com/images/hp-cover-korero.webp" alt="">
+            </div>
+            <p class="text-start">Texto debajo de la imagen 3</p>
+        </div>
+        <!-- Cuarta columna con imagen y texto debajo -->
+        <div class="col-12 col-sm">
+            <div class="about-img pos-rel portfolio-item xb-img-reveal-item mt-60" data-cat="Press Here"
+                data-title="VIEW CASE STUDY" data-fx="1">
+                <img  style="object-fit: cover; border-radius: 20px 0px 20px 0;"
+                    data-u-speed="1.2" src="https://uxstudioteam.com/images/hp-cover-mome.webp" alt="">
+            </div>
+            <p class="text-start">Texto debajo de la imagen 4</p>
+        </div>
+    </div>
+</div>
 
-        
-
-        <!-- counter section start  -->
-        <section class="counter z-3 pt-50 pb-90" data-bg-color=#C1272D">
-            <div class="container">
-                <div class="counter-wrap ul_li_between">
-                    <div class="xb-couter-box ul_li">
-                        <div class="xb-item--icon">
-                            <img src="assets/img/icon/coun_01.svg" alt="">
-                        </div>
-                        <div class="xb-item--holder">
-                            <h3 class="xb-item--title xb-odm"><span class="xbo" data-count="30">00</span><span class="suffix">K</span></h3>
-                            <p class="xb-item--content">Project Completed</p>
-                        </div>
-                    </div>
-                    <div class="xb-couter-box ul_li">
-                        <div class="xb-item--icon">
-                            <img src="assets/img/icon/coun_02.svg" alt="">
-                        </div>
-                        <div class="xb-item--holder">
-                            <h3 class="xb-item--title"><span class="xbo" data-count="97">00</span></h3>
-                            <p class="xb-item--content">Sectors</p>
-                        </div>
-                    </div>
-                    <div class="xb-couter-box ul_li">
-                        <div class="xb-item--icon">
-                            <img src="assets/img/icon/coun_03.svg" alt="">
-                        </div>
-                        <div class="xb-item--holder">
-                            <h3 class="xb-item--title"><span class="xbo" data-count="16">00</span></h3>
-                            <p class="xb-item--content">Countries</p>
-                        </div>
-                    </div>
-                    <div class="xb-couter-box ul_li">
-                        <div class="xb-item--icon">
-                            <img src="assets/img/icon/coun_04.svg" alt="">
-                        </div>
-                        <div class="xb-item--holder">
-                            <h3 class="xb-item--title"><span class="xbo" data-count="600">00</span></h3>
-                            <p class="xb-item--content">Happy Customer</p>
+  
+                  <!-- brand area start  -->
+                  <div class="brand-style-three about-brand pb-20">
+                    <div class="container-fluid">
+                        <div class="brand-slider about-slider swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide xb-brand">
+                                    <a href="#!"><img class="enterpriseImg" src="assets/img/logo/EnterprisesLogos/Microsoft.webp" alt="Microsoft"></a>
+                                </div>
+                                <div class="swiper-slide xb-brand">
+                                    <a href="#!"><img class="enterpriseImg" src="assets/img/logo/EnterprisesLogos/ElRollo.webp" alt="El Rollo"></a>
+                                </div>
+                                <div class="swiper-slide xb-brand">
+                                    <a href="#!"><img class="enterpriseImg" src="assets/img/logo/EnterprisesLogos/NacionesUnidas.webp" alt=" Naciones Unidas"></a>
+                                </div>
+                                <div class="swiper-slide xb-brand">
+                                    <a href="#!"><img class="enterpriseImg" src="/assets/img/logo/EnterprisesLogos/UNAM.webp" alt="UNAM"></a>
+                                </div>
+                                <div class="swiper-slide xb-brand">
+                                    <a href="#!"><img class="enterpriseImg" src="assets/img/logo/EnterprisesLogos/UsCranberries.webp" alt="US Cranberries"></a>
+                                </div>
+                                <div class="swiper-slide xb-brand">
+                                    <a href="#!"><img class="enterpriseImg" src="assets/img/logo/EnterprisesLogos/ToYou.webp" alt="To You"></a>
+                                </div>
+                                <div class="swiper-slide xb-brand">
+                                    <a href="#!"><img class="enterpriseImg" src="assets/img/logo/EnterprisesLogos/USA.webp" alt="USA Apples"></a>
+                                </div>
+                                <div class="swiper-slide xb-brand">
+                                    <a href="#!"><img class="enterpriseImg" src="assets/img/logo/EnterprisesLogos/TopDesign.webp" alt="Top Design"></a>
+                                </div>
+                                <div class="swiper-slide xb-brand">
+                                    <a href="#!"><img class="enterpriseImg" src="assets/img/logo/EnterprisesLogos/TioFrancisco.webp" alt="Tio Francisco"></a>
+                                </div>
+                                <div class="swiper-slide xb-brand">
+                                    <a href="#!"><img class="enterpriseImg" src="assets/img/logo/EnterprisesLogos/SociedadMexicanadeBiotecnologia.webp" alt="Sociedad Mexicana de Biotecnologia"></a>
+                                </div>
+                                <div class="swiper-slide xb-brand">
+                                    <a href="#!"><img class="enterpriseImg" src="assets/img/logo/EnterprisesLogos/SinfonicaMineria.webp" alt="Sinfonica Mineria"></a>
+                                </div>
+                                <div class="swiper-slide xb-brand">
+                                    <a href="#!"><img class="enterpriseImg" src="assets/img/logo/EnterprisesLogos/Sentient.webp" alt="Sentient"></a>
+                                </div>
+                                <div class="swiper-slide xb-brand">
+                                    <a href="#!"><img class="enterpriseImg" src="assets/img/logo/EnterprisesLogos/Rioja.webp" alt="Rioja"></a>
+                                </div>
+                                <div class="swiper-slide xb-brand">
+                                    <a href="#!"><img class="enterpriseImg" src="assets/img/logo/EnterprisesLogos/Quist.webp" alt="Quist"></a>
+                                </div>
+                                <div class="swiper-slide xb-brand">
+                                    <a href="#!"><img class="enterpriseImg" src="assets/img/logo/EnterprisesLogos/PotatoesUSA.webp" alt="Potatoes USA"></a>
+                                </div>
+                                <div class="swiper-slide xb-brand">
+                                    <a href="#!"><img class="enterpriseImg" src="assets/img/logo/EnterprisesLogos/Pinnacle.webp" alt="Pinnacle"></a>
+                                </div>
+                                <div class="swiper-slide xb-brand">
+                                    <a href="#!"><img class="enterpriseImg" src="assets/img/logo/EnterprisesLogos/PetFoodInstitute.webp" alt="Pet Food Institute"></a>
+                                </div>
+                                <div class="swiper-slide xb-brand">
+                                    <a href="#!"><img class="enterpriseImg" src="assets/img/logo/EnterprisesLogos/PerasUSA.webp" alt="Peras USA"></a>
+                                </div>
+                                <div class="swiper-slide xb-brand">
+                                    <a href="#!"><img class="enterpriseImg" src="assets/img/logo/EnterprisesLogos/PerasBarlett.webp" alt="Peras Barlett"></a>
+                                </div>
+                                <div class="swiper-slide xb-brand">
+                                    <a href="#!"><img class="enterpriseImg" src="assets/img/logo/EnterprisesLogos/Nerdwallet.webp" alt="Nerdwallet"></a>
+                                </div>
+            
+                                <div class="swiper-slide xb-brand">
+                                    <a href="#!"><img class="enterpriseImg" src="assets/img/logo/EnterprisesLogos/ModernCounsel.webp" alt="Modern Counsel"></a>
+                                </div>
+                                <div class="swiper-slide xb-brand">
+                                    <a href="#!"><img class="enterpriseImg" src="assets/img/logo/EnterprisesLogos/MexicoPacific.webp" alt="Mexico Pacific"></a>
+                                </div>
+                                <div class="swiper-slide xb-brand">
+                                    <a href="#!"><img class="enterpriseImg" src="assets/img/logo/EnterprisesLogos/Latiz.webp" alt="Latiz"></a>
+                                </div>
+                                <div class="swiper-slide xb-brand">
+                                    <a href="#!"><img class="enterpriseImg" src="assets/img/logo/EnterprisesLogos/InstitutodeBiotecnologia.webp" alt="Instituto de Biotecnologia"></a>
+                                </div>
+                                <div class="swiper-slide xb-brand">
+                                    <a href="#!"><img class="enterpriseImg" src="assets/img/logo/EnterprisesLogos/IE.webp" alt="Instituto de Energias Renovables"></a>
+                                </div>
+                                <div class="swiper-slide xb-brand">
+                                    <a href="#!"><img class="enterpriseImg" src="assets/img/logo/EnterprisesLogos/Ideograma.webp" alt="Ideograma"></a>
+                                </div>
+                                <div class="swiper-slide xb-brand">
+                                    <a href="#!"><img class="enterpriseImg" src="assets/img/logo/EnterprisesLogos/HispanicExecutive.webp" alt="Hispanic Executive"></a>
+                                </div>
+                                <div class="swiper-slide xb-brand">
+                                    <a href="#!"><img class="enterpriseImg" src="assets/img/logo/EnterprisesLogos/Grenetta.webp" alt="Grenetta"></a>
+                                </div>
+                                <div class="swiper-slide xb-brand">
+                                    <a href="#!"><img class="enterpriseImg" src="assets/img/logo/EnterprisesLogos/Gastehaus.webp" alt="Gastehaus"></a>
+                                </div>
+                                <div class="swiper-slide xb-brand">
+                                    <a href="#!"><img class="enterpriseImg" src="assets/img/logo/EnterprisesLogos/Galicia.webp" alt="Galicia"></a>
+                                </div>
+                                <div class="swiper-slide xb-brand">
+                                    <a href="#!"><img class="enterpriseImg" src="assets/img/logo/EnterprisesLogos/FruitAcademy.webp" alt="Fruit Academy"></a>
+                                </div>
+                                <div class="swiper-slide xb-brand">
+                                    <a href="#!"><img class="enterpriseImg" src="assets/img/logo/EnterprisesLogos/FreshCup.webp" alt="FreshCup"></a>
+                                </div>
+                                <div class="swiper-slide xb-brand">
+                                    <a href="#!"><img class="enterpriseImg" src="assets/img/logo/EnterprisesLogos/FresasdeCalifornia.webp" alt="Fresas de California"></a>
+                                </div>
+                                <div class="swiper-slide xb-brand">
+                                    <a href="#!"><img class="enterpriseImg" src="assets/img/logo/EnterprisesLogos/CemieSol.webp" alt="CemieSol"></a>
+                                </div>
+                                <div class="swiper-slide xb-brand">
+                                    <a href="#!"><img class="enterpriseImg" src="assets/img/logo/EnterprisesLogos/Bola.webp" alt="Identidad.com"></a>
+                                </div>
+                                <div class="swiper-slide xb-brand">
+                                    <a href="#!"><img class="enterpriseImg" src="assets/img/logo/EnterprisesLogos/Ancient.webp" alt="Ancient"></a>
+                                </div>
+                                <div class="swiper-slide xb-brand">
+                                    <a href="#!"><img class="enterpriseImg" src="assets/img/logo/EnterprisesLogos/AmericanPeanutCouncil.webp" alt="American Peanut Council"></a>
+                                </div>
+                                <div class="swiper-slide xb-brand">
+                                    <a href="#!"><img class="enterpriseImg" src="assets/img/logo/EnterprisesLogos/Alanza.webp" alt="Alanza"></a>
+                                </div>
+            
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!-- counter section end  -->
+                <!-- brand area end  -->
+
+
+
+
+
 
         <!-- about section start  -->
-        <section  class="about  " style="margin-top: 18em;"> 
+        <section  class="about"> 
             <div class="container pos-rel">
                 <div class="about-top ">
                     <div class="row align-items-end mt-none-30">
 
-                        <div class="col-lg-6 mt-80">
+                        <div class="col-lg-6 mt-180">
                             <div class="section-title">
                                 <span class="sub-title wow fadeInRight" data-wow-duration=".7s">About Sodio</span>
                                 <h3 class="title xb-split-text split-in-right" style="font-weight: 600;">We Create Impactful<span>Digital Experiences</span></h3>
@@ -310,7 +450,7 @@
                                     <li  class="block accordion active  active-block" style="  border-bottom: none">
                                         <div class="acc-btn">
                                             How Can i Design Delivery
-                                            <span class="arrow"></span>
+                                            <svg width="25" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M5.70711 9.71069C5.31658 10.1012 5.31658 10.7344 5.70711 11.1249L10.5993 16.0123C11.3805 16.7927 12.6463 16.7924 13.4271 16.0117L18.3174 11.1213C18.708 10.7308 18.708 10.0976 18.3174 9.70708C17.9269 9.31655 17.2937 9.31655 16.9032 9.70708L12.7176 13.8927C12.3271 14.2833 11.6939 14.2832 11.3034 13.8927L7.12132 9.71069C6.7308 9.32016 6.09763 9.32016 5.70711 9.71069Z" fill="#f2f2f2"></path> </g></svg>
                                         </div>
                                         <div class="acc_body current">
                                             <div class="content">
@@ -321,7 +461,7 @@
                                     <li class="accordion block" style="  border-bottom: none">
                                         <div class="acc-btn">
                                             What is the product merging roadmap?
-                                            <span class="arrow"></span>
+                                            <svg width="25" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M5.70711 9.71069C5.31658 10.1012 5.31658 10.7344 5.70711 11.1249L10.5993 16.0123C11.3805 16.7927 12.6463 16.7924 13.4271 16.0117L18.3174 11.1213C18.708 10.7308 18.708 10.0976 18.3174 9.70708C17.9269 9.31655 17.2937 9.31655 16.9032 9.70708L12.7176 13.8927C12.3271 14.2833 11.6939 14.2832 11.3034 13.8927L7.12132 9.71069C6.7308 9.32016 6.09763 9.32016 5.70711 9.71069Z" fill="#f2f2f2"></path> </g></svg>
                                         </div>
                                         <div class="acc_body">
                                             <div class="content">
@@ -332,7 +472,7 @@
                                     <li class="accordion block"style="  border-bottom: none">
                                         <div class="acc-btn">
                                             Owner’s Engineering
-                                            <span class="arrow"></span>
+                                            <svg width="25" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M5.70711 9.71069C5.31658 10.1012 5.31658 10.7344 5.70711 11.1249L10.5993 16.0123C11.3805 16.7927 12.6463 16.7924 13.4271 16.0117L18.3174 11.1213C18.708 10.7308 18.708 10.0976 18.3174 9.70708C17.9269 9.31655 17.2937 9.31655 16.9032 9.70708L12.7176 13.8927C12.3271 14.2833 11.6939 14.2832 11.3034 13.8927L7.12132 9.71069C6.7308 9.32016 6.09763 9.32016 5.70711 9.71069Z" fill="#f2f2f2"></path> </g></svg>
                                         </div>
                                         <div class="acc_body">
                                             <div class="content">
@@ -343,7 +483,7 @@
                                     <li class="accordion block"style="  border-bottom: none">
                                         <div class="acc-btn">
                                             Can I change analytics admin panel?
-                                            <span class="arrow"></span>
+                                            <svg width="25" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M5.70711 9.71069C5.31658 10.1012 5.31658 10.7344 5.70711 11.1249L10.5993 16.0123C11.3805 16.7927 12.6463 16.7924 13.4271 16.0117L18.3174 11.1213C18.708 10.7308 18.708 10.0976 18.3174 9.70708C17.9269 9.31655 17.2937 9.31655 16.9032 9.70708L12.7176 13.8927C12.3271 14.2833 11.6939 14.2832 11.3034 13.8927L7.12132 9.71069C6.7308 9.32016 6.09763 9.32016 5.70711 9.71069Z" fill="#f2f2f2"></path> </g></svg>
                                         </div>
                                         <div class="acc_body">
                                             <div class="content">
@@ -354,7 +494,7 @@
                                     <li class="accordion block"style="  border-bottom: none">
                                         <div class="acc-btn">
                                             How to work with Google Analytics?
-                                            <span class="arrow"></span>
+                                            <svg width="25" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M5.70711 9.71069C5.31658 10.1012 5.31658 10.7344 5.70711 11.1249L10.5993 16.0123C11.3805 16.7927 12.6463 16.7924 13.4271 16.0117L18.3174 11.1213C18.708 10.7308 18.708 10.0976 18.3174 9.70708C17.9269 9.31655 17.2937 9.31655 16.9032 9.70708L12.7176 13.8927C12.3271 14.2833 11.6939 14.2832 11.3034 13.8927L7.12132 9.71069C6.7308 9.32016 6.09763 9.32016 5.70711 9.71069Z" fill="#f2f2f2"></path> </g></svg>
                                         </div>
                                         <div class="acc_body">
                                             <div class="content">
@@ -368,7 +508,7 @@
 
                               
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-lg-6" style="padding-bottom: 20em;">
                             <div class="about-right">
                                 <div  class="about-img pos-rel" >
                                     <img class="ukiyo" style="object-fit: cover; border-radius: 20px 0px 20px 0;"
@@ -386,135 +526,10 @@
 
         </section>
         
-                        <!-- brand area start  -->
-                        <div class="brand-style-three about-brand ">
-                            <div class="container">
-                                <div class="brand-slider about-slider swiper-container">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide xb-brand">
-                                            <a href="#!"><img class="enterpriseImg" src="assets/img/logo/EnterprisesLogos/Microsoft.webp" alt="Microsoft"></a>
-                                        </div>
-                                        <div class="swiper-slide xb-brand">
-                                            <a href="#!"><img class="enterpriseImg" src="assets/img/logo/EnterprisesLogos/ElRollo.webp" alt="El Rollo"></a>
-                                        </div>
-                                        <div class="swiper-slide xb-brand">
-                                            <a href="#!"><img class="enterpriseImg" src="assets/img/logo/EnterprisesLogos/NacionesUnidas.webp" alt=" Naciones Unidas"></a>
-                                        </div>
-                                        <div class="swiper-slide xb-brand">
-                                            <a href="#!"><img class="enterpriseImg" src="/assets/img/logo/EnterprisesLogos/UNAM.webp" alt="UNAM"></a>
-                                        </div>
-                                        <div class="swiper-slide xb-brand">
-                                            <a href="#!"><img class="enterpriseImg" src="assets/img/logo/EnterprisesLogos/UsCranberries.webp" alt="US Cranberries"></a>
-                                        </div>
-                                        <div class="swiper-slide xb-brand">
-                                            <a href="#!"><img class="enterpriseImg" src="assets/img/logo/EnterprisesLogos/ToYou.webp" alt="To You"></a>
-                                        </div>
-                                        <div class="swiper-slide xb-brand">
-                                            <a href="#!"><img class="enterpriseImg" src="assets/img/logo/EnterprisesLogos/USA.webp" alt="USA Apples"></a>
-                                        </div>
-                                        <div class="swiper-slide xb-brand">
-                                            <a href="#!"><img class="enterpriseImg" src="assets/img/logo/EnterprisesLogos/TopDesign.webp" alt="Top Design"></a>
-                                        </div>
-                                        <div class="swiper-slide xb-brand">
-                                            <a href="#!"><img class="enterpriseImg" src="assets/img/logo/EnterprisesLogos/TioFrancisco.webp" alt="Tio Francisco"></a>
-                                        </div>
-                                        <div class="swiper-slide xb-brand">
-                                            <a href="#!"><img class="enterpriseImg" src="assets/img/logo/EnterprisesLogos/SociedadMexicanadeBiotecnologia.webp" alt="Sociedad Mexicana de Biotecnologia"></a>
-                                        </div>
-                                        <div class="swiper-slide xb-brand">
-                                            <a href="#!"><img class="enterpriseImg" src="assets/img/logo/EnterprisesLogos/SinfonicaMineria.webp" alt="Sinfonica Mineria"></a>
-                                        </div>
-                                        <div class="swiper-slide xb-brand">
-                                            <a href="#!"><img class="enterpriseImg" src="assets/img/logo/EnterprisesLogos/Sentient.webp" alt="Sentient"></a>
-                                        </div>
-                                        <div class="swiper-slide xb-brand">
-                                            <a href="#!"><img class="enterpriseImg" src="assets/img/logo/EnterprisesLogos/Rioja.webp" alt="Rioja"></a>
-                                        </div>
-                                        <div class="swiper-slide xb-brand">
-                                            <a href="#!"><img class="enterpriseImg" src="assets/img/logo/EnterprisesLogos/Quist.webp" alt="Quist"></a>
-                                        </div>
-                                        <div class="swiper-slide xb-brand">
-                                            <a href="#!"><img class="enterpriseImg" src="assets/img/logo/EnterprisesLogos/PotatoesUSA.webp" alt="Potatoes USA"></a>
-                                        </div>
-                                        <div class="swiper-slide xb-brand">
-                                            <a href="#!"><img class="enterpriseImg" src="assets/img/logo/EnterprisesLogos/Pinnacle.webp" alt="Pinnacle"></a>
-                                        </div>
-                                        <div class="swiper-slide xb-brand">
-                                            <a href="#!"><img class="enterpriseImg" src="assets/img/logo/EnterprisesLogos/PetFoodInstitute.webp" alt="Pet Food Institute"></a>
-                                        </div>
-                                        <div class="swiper-slide xb-brand">
-                                            <a href="#!"><img class="enterpriseImg" src="assets/img/logo/EnterprisesLogos/PerasUSA.webp" alt="Peras USA"></a>
-                                        </div>
-                                        <div class="swiper-slide xb-brand">
-                                            <a href="#!"><img class="enterpriseImg" src="assets/img/logo/EnterprisesLogos/PerasBarlett.webp" alt="Peras Barlett"></a>
-                                        </div>
-                                        <div class="swiper-slide xb-brand">
-                                            <a href="#!"><img class="enterpriseImg" src="assets/img/logo/EnterprisesLogos/Nerdwallet.webp" alt="Nerdwallet"></a>
-                                        </div>
-                    
-                                        <div class="swiper-slide xb-brand">
-                                            <a href="#!"><img class="enterpriseImg" src="assets/img/logo/EnterprisesLogos/ModernCounsel.webp" alt="Modern Counsel"></a>
-                                        </div>
-                                        <div class="swiper-slide xb-brand">
-                                            <a href="#!"><img class="enterpriseImg" src="assets/img/logo/EnterprisesLogos/MexicoPacific.webp" alt="Mexico Pacific"></a>
-                                        </div>
-                                        <div class="swiper-slide xb-brand">
-                                            <a href="#!"><img class="enterpriseImg" src="assets/img/logo/EnterprisesLogos/Latiz.webp" alt="Latiz"></a>
-                                        </div>
-                                        <div class="swiper-slide xb-brand">
-                                            <a href="#!"><img class="enterpriseImg" src="assets/img/logo/EnterprisesLogos/InstitutodeBiotecnologia.webp" alt="Instituto de Biotecnologia"></a>
-                                        </div>
-                                        <div class="swiper-slide xb-brand">
-                                            <a href="#!"><img class="enterpriseImg" src="assets/img/logo/EnterprisesLogos/IE.webp" alt="Instituto de Energias Renovables"></a>
-                                        </div>
-                                        <div class="swiper-slide xb-brand">
-                                            <a href="#!"><img class="enterpriseImg" src="assets/img/logo/EnterprisesLogos/Ideograma.webp" alt="Ideograma"></a>
-                                        </div>
-                                        <div class="swiper-slide xb-brand">
-                                            <a href="#!"><img class="enterpriseImg" src="assets/img/logo/EnterprisesLogos/HispanicExecutive.webp" alt="Hispanic Executive"></a>
-                                        </div>
-                                        <div class="swiper-slide xb-brand">
-                                            <a href="#!"><img class="enterpriseImg" src="assets/img/logo/EnterprisesLogos/Grenetta.webp" alt="Grenetta"></a>
-                                        </div>
-                                        <div class="swiper-slide xb-brand">
-                                            <a href="#!"><img class="enterpriseImg" src="assets/img/logo/EnterprisesLogos/Gastehaus.webp" alt="Gastehaus"></a>
-                                        </div>
-                                        <div class="swiper-slide xb-brand">
-                                            <a href="#!"><img class="enterpriseImg" src="assets/img/logo/EnterprisesLogos/Galicia.webp" alt="Galicia"></a>
-                                        </div>
-                                        <div class="swiper-slide xb-brand">
-                                            <a href="#!"><img class="enterpriseImg" src="assets/img/logo/EnterprisesLogos/FruitAcademy.webp" alt="Fruit Academy"></a>
-                                        </div>
-                                        <div class="swiper-slide xb-brand">
-                                            <a href="#!"><img class="enterpriseImg" src="assets/img/logo/EnterprisesLogos/FreshCup.webp" alt="FreshCup"></a>
-                                        </div>
-                                        <div class="swiper-slide xb-brand">
-                                            <a href="#!"><img class="enterpriseImg" src="assets/img/logo/EnterprisesLogos/FresasdeCalifornia.webp" alt="Fresas de California"></a>
-                                        </div>
-                                        <div class="swiper-slide xb-brand">
-                                            <a href="#!"><img class="enterpriseImg" src="assets/img/logo/EnterprisesLogos/CemieSol.webp" alt="CemieSol"></a>
-                                        </div>
-                                        <div class="swiper-slide xb-brand">
-                                            <a href="#!"><img class="enterpriseImg" src="assets/img/logo/EnterprisesLogos/Bola.webp" alt="Identidad.com"></a>
-                                        </div>
-                                        <div class="swiper-slide xb-brand">
-                                            <a href="#!"><img class="enterpriseImg" src="assets/img/logo/EnterprisesLogos/Ancient.webp" alt="Ancient"></a>
-                                        </div>
-                                        <div class="swiper-slide xb-brand">
-                                            <a href="#!"><img class="enterpriseImg" src="assets/img/logo/EnterprisesLogos/AmericanPeanutCouncil.webp" alt="American Peanut Council"></a>
-                                        </div>
-                                        <div class="swiper-slide xb-brand">
-                                            <a href="#!"><img class="enterpriseImg" src="assets/img/logo/EnterprisesLogos/Alanza.webp" alt="Alanza"></a>
-                                        </div>
-                
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- brand area end  -->
-
-<section id="caseStudies"  style="background-color:#050505; padding-top: 10em;">
-    <div class="container">
+      
+<section id="caseStudies"  >
+    <div class="container pb-100">
+        
         <!-- Primera fila -->
         <div class="row">
             <div class="section-title">
@@ -584,15 +599,66 @@
                 </div>
             </div>
         </div>
-        <!-- Tercera fila -->
-        <div class="row" style="margin-top: 5em;">
+    </div>
+
+
+            <!-- counter section start  -->
+            <section class="counter z-3  pb-30" data-bg-color=#C1272D">
+                <div class="container">
+                    <div class="counter-wrap ul_li_between">
+                        <div class="xb-couter-box ul_li">
+                            <div class="xb-item--icon">
+                                <img src="assets/img/icon/coun_01.svg" alt="">
+                            </div>
+                            <div class="xb-item--holder">
+                                <h3 class="xb-item--title xb-odm"><span class="xbo" data-count="30">00</span><span class="suffix">K</span></h3>
+                                <p class="xb-item--content">Project Completed</p>
+                            </div>
+                        </div>
+                        <div class="xb-couter-box ul_li">
+                            <div class="xb-item--icon">
+                                <img src="assets/img/icon/coun_02.svg" alt="">
+                            </div>
+                            <div class="xb-item--holder">
+                                <h3 class="xb-item--title"><span class="xbo" data-count="97">00</span></h3>
+                                <p class="xb-item--content">Sectors</p>
+                            </div>
+                        </div>
+                        <div class="xb-couter-box ul_li">
+                            <div class="xb-item--icon">
+                                <img src="assets/img/icon/coun_03.svg" alt="">
+                            </div>
+                            <div class="xb-item--holder">
+                                <h3 class="xb-item--title"><span class="xbo" data-count="16">00</span></h3>
+                                <p class="xb-item--content">Countries</p>
+                            </div>
+                        </div>
+                        <div class="xb-couter-box ul_li">
+                            <div class="xb-item--icon">
+                                <img src="assets/img/icon/coun_04.svg" alt="">
+                            </div>
+                            <div class="xb-item--holder">
+                                <h3 class="xb-item--title"><span class="xbo" data-count="600">00</span></h3>
+                                <p class="xb-item--content">Happy Customer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- counter section end  -->
+
+
+
+    <div class="container pb-100">
+        <!-- Primera fila -->
+        <div class="row">
 
             <div class="col-12 col-md-6 mt-80 ">
                 <div class="portfolio-item xb-img-reveal-item mt-60" data-cat="Press Here"
                 data-title="VIEW CASE STUDY" data-fx="1">
                     <div class=" image-1">
                         <div class="video-container" onmouseover="playVideo(this)" onmouseout="pauseVideo(this)">
-                            <video c muted>
+                            <video muted>
                                 <source src="https://cdn.sanity.io/files/r115idoc/production/1c651c5005c18a36ad53910194ff8cdb7fca24f7.mp4" type="video/mp4">
                                 Tu navegador no soporta la reproducción de videos.
                             </video>
@@ -604,7 +670,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 mt-200 mb-200">
+            <div class="col-12 col-md-6 mt-200">
                 <div class="portfolio-item xb-img-reveal-item mt-60" data-cat="Press Here"
                 data-title="VIEW CASE STUDY" data-fx="1">
                     <div class=" image-1">
@@ -622,8 +688,36 @@
                 </div>
             </div>
         </div>
+        <!-- Segunda fila -->
+        <div class="row" style="margin-top: 5em;">
+            <div class="col-12 col-md-6">
+                <div class="video-container" onmouseover="playVideo(this)" onmouseout="pauseVideo(this)">
+                    <video muted>
+                        <source src="https://cdn.sanity.io/files/r115idoc/production/7435731992f8ed9ead2376968d08fcc02b005fd3.mp4" type="video/mp4">
+                        Tu navegador no soporta la reproducción de videos.
+                    </video>
+                    <img src="https://static.wixstatic.com/media/bc0394_63a354d747434950b39e3071994f9ee1~mv2.webp" alt="Imagen al pausar">
+                </div>                
+                
+                <div class="xb-item--holder">
+                    <h3 class="xb-item--title">Maralina Harless <br> <span>Fashion Designer</span></h3>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 mt-200">
+                <div class="video-container" onmouseover="playVideo(this)" onmouseout="pauseVideo(this)">
+                    <video muted>
+                        <source src="https://cdn.sanity.io/files/r115idoc/production/1c651c5005c18a36ad53910194ff8cdb7fca24f7.mp4" type="video/mp4">
+                        Tu navegador no soporta la reproducción de videos.
+                    </video>
+                    <img src="https://avatars.githubusercontent.com/u/6911160?s=280&v=4" alt="Imagen al pausar">
+                </div>
+                <div class="xb-item--holder">
+                    <h3 class="xb-item--title">Maralina Harless <br> <span>Fashion Designer</span></h3>
+                </div>
+            </div>
+        </div>
     </div>
-
+    
 </section>
 
 
@@ -906,7 +1000,7 @@
 
          
          <!-- testimonial section start  -->
-         <section class="testimonial pos-rel ">
+         <section class="testimonial pos-rel pt-130">
             <div class="container">
                 <div class="section-title text-center mb-45">
                     <span class="sub-title wow fadeInRight" data-wow-duration=".7s">Testimonial</span>
@@ -1065,10 +1159,10 @@
 
 <!-- footer start -->
 <footer class="footer xb-footer-bg bg_img ukiyo" data-u-speed="1.5">
-    <!--
+  
     <div id="footer-div" class="gooeyFooter1"></div>
     <div id="footer-div" class="gooeyFooter2"></div>
-    -->
+
     <div class="xb-footer-wrap pt-120">
         <div class="container">
             <div class="xb-footer-inner">
@@ -1078,7 +1172,7 @@
                 </div>
 
                 <div class="footer-logo text-center">
-                    <h1 style="font-weight: 800;">LET'S TALK</h1>
+                    <h1 style="font-weight: 1000; font-size: 10em;margin-top: -1em;">LET'S TALK</h1>
                     <h3 style="font-weight: 200;">info@sodio.net</h3>
                     <img class="mt-40"  id="logo" src="./assets/img/logo/SodioWhite.webp" alt="Logo">
                 </div>
